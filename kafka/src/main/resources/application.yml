@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9093   # kafka IP port (브로커 주소)
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer # kafka에 메시지를 send할 , key-value로 send하기 때문에 key를 어떻게 직렬화 시킬지에 대한 것
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer # value를 어떻게 직렬화 시킬 것인지에 대한 것
