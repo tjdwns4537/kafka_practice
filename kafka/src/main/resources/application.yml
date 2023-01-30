@@ -1,7 +1,7 @@
 server:
   port: 8083
 
-logging:
-  level:
-    com.example.listener.KafkaConsumer: debug
+#logging:
+#  level:
+#    com.example.listener.KafkaConsumer: debug
 #    root: debug
