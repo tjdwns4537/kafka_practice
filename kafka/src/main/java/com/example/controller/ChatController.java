@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @Slf4j
-@CrossOrigin
 @RestController
-@RequestMapping(value = "/kafka")
+@RequestMapping("/kafka")
 public class ChatController {
+
     @Autowired
     private KafkaTemplate<String, Message> kafkaTemplate;
 
-    @PostMapping(value = "/publish")
+    @PostMapping("/publish")
     public void sendMessage(@RequestBody Message message) {
         log.info("Produce message : " + message.toString());
         message.setTimestamp(LocalDateTime.now().toString());

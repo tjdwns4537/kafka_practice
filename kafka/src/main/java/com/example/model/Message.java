@@ -3,9 +3,9 @@ package com.example.model;
 import java.io.Serializable;
 
 public class Message implements Serializable {
-    private String author;
-    private String content;
-    private String timestamp;
+    private String author; // 메세지 작성자
+    private String content; // 메세지 내용
+    private String timestamp; // 메세지 작성된 시간
 
     public Message() {
     }
